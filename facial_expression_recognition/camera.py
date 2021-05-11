@@ -5,7 +5,7 @@ from model import FacialExpressionModel
 import numpy as np
 
 facec = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-model = FacialExpressionModel("model.json", "model_weights.h5")
+model = FacialExpressionModel("model/model.json", "model/model_weights.h5")
 font = cv2.FONT_HERSHEY_SIMPLEX
 
 class VideoCamera(object):
@@ -13,7 +13,7 @@ class VideoCamera(object):
     # Point open CV to the video
     def __init__(self):
         # self.video = cv2.VideoCapture("videos/facial_exp.mkv")
-        self.video = cv2.VideoCapture("videos/presidential_debate.mp4")
+        self.video = cv2.VideoCapture("videos/cartoon_vid.mp4")
     
     def __del__(self):
         self.video.release()
