@@ -52,3 +52,9 @@ Process 6: Creating the Flask app. To create the Flask app, I made a model.py fi
 <hr>
 
 ![](images/life4.png)
+
+Completion: The app was completed after debugging. Some errors encountered included incorrect file types (utilizing mainly mp4 and png files), incorrect file paths for python files, and others. Images were taken from the Flask app itself and used in this ReadMe. 
+
+<hr>
+
+![](images/image2.png)
