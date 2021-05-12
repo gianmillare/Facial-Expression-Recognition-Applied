@@ -29,8 +29,26 @@ Process 3: I created Convolutional Neural Networks using 4 layers, explicitly ch
 
 ![](images/life1.png)
 
-Process 4: Each ConvNet Layer was then connected using Dense layers. There were 3 connected layers, which ended with a 'softmax' output layer as the output should be categorical. This method also selected an Adam optimizer. 
+Process 4: Each ConvNet Layer was then connected using Dense layers. There were 3 connected layers, which ended with a 'softmax' output layer as the output should be categorical. 
 
 <hr>
 
 ![](images/life3.png)
+
+Process 4: Compilation, Training, and Evaluation. The model was compiled with an Adam Optimizer, a cateogircal crossentropy loss, and a record of accuracy. Fitting the model resulted in a training accuracy of 73% and a validation (testing) accuracy of 66%. I debated adding more epochs, but settled with 25 for time's sake. 
+
+<hr>
+
+![](images/accuracy.png)
+
+Process 5: Saving the model, model_weights, and JSON file. I saved the model in case I want to return to the model. The model was then written out in a JSON file for preparation of the Flask app. 
+
+<hr>
+
+![](images/life5.png)
+
+Process 6: Creating the Flask app. To create the Flask app, I made a model.py file (to call and house the model from the jupyter notebook), a camera.py file (to 'snapshot' the face area of the video), and a main.py file (to launch the app and take arguments from the other two python files).
+
+<hr>
+
+![](images/life4.png)
