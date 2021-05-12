@@ -19,4 +19,18 @@ Process 1: The aforementioned Coursera course contained over 30,000 images that 
 
 Process 2: After splitting the data into training and testing sets, I split the sets into 7 folders depending on what expression the image contained. The folder names contained the output labels.  
 
+<hr>
+
 ![](images/life2.png)
+
+Process 3: I created Convolutional Neural Networks using 4 layers, explicitly changing the amount of filters in each layer (64, 128, and 512) throughout the ConvNet. Each layer was given a BatchNormalization(), relu Activation, 2x2 pool size, and 0.25 Dropout. Lastly, the model was flattened after building the ConvNet layers. 
+
+<hr>
+
+![](images/life1.png)
+
+Process 4: Each ConvNet Layer was then connected using Dense layers. There were 3 connected layers, which ended with a 'softmax' output layer as the output should be categorical. This method also selected an Adam optimizer. 
+
+<hr>
+
+![](images/life3.png)
